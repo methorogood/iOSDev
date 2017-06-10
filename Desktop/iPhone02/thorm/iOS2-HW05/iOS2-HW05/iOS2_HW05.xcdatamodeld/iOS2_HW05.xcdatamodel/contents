@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PositionReport" representedClassName=".PositionReport" syncable="YES">
+        <attribute name="heading" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="toVessel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vessel" inverseName="positionReports" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="Vessel" representedClassName=".Vessel" syncable="YES">
+        <attribute name="abbreviatedName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vesselID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="positionReports" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PositionReport" inverseName="toVessel" inverseEntity="PositionReport" syncable="YES"/>
+        <relationship name="toVesselClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VesselClass" inverseName="vessels" inverseEntity="VesselClass" syncable="YES"/>
+        <relationship name="toVesselDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VesselDetail" inverseName="toVessel" inverseEntity="VesselDetail" syncable="YES"/>
+    </entity>
+    <entity name="VesselClass" representedClassName=".VesselClass" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vessels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vessel" inverseName="toVesselClass" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="VesselDetail" representedClassName=".VesselDetail" syncable="YES">
+        <attribute name="drawingURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toVessel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vessel" inverseName="toVesselDetail" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PositionReport" positionX="-315" positionY="27" width="128" height="135"/>
+        <element name="Vessel" positionX="-92" positionY="162" width="128" height="135"/>
+        <element name="VesselClass" positionX="124" positionY="294" width="128" height="75"/>
+        <element name="VesselDetail" positionX="-308" positionY="330" width="128" height="120"/>
+    </elements>
+</model>

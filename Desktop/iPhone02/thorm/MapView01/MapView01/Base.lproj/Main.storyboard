@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapView01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dcV-bb-b9Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="507"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RQf-s6-ckq" id="1gk-9K-0nQ"/>
+                                </connections>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7pW-4K-VhW" userLabel="Options Stackview">
+                                <rect key="frame" x="92" y="515.5" width="191" height="103"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="HF0-Ys-jhp">
+                                        <rect key="frame" x="0.0" y="0.0" width="189.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssu-84-Hpg">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dag-Cd-i5A">
+                                                <rect key="frame" x="140.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchMyLocation:" destination="BYZ-38-t0r" eventType="valueChanged" id="hhp-MW-6Kc"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-IY-2YW" userLabel="Traffic Stack View">
+                                        <rect key="frame" x="0.0" y="36" width="190" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lz-YW-4r6">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-vs-OTV">
+                                                <rect key="frame" x="141" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchTraffic:" destination="BYZ-38-t0r" eventType="valueChanged" id="cN7-x4-6RA"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-Vq-b3u">
+                                        <rect key="frame" x="0.0" y="72" width="190.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point of Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo8-oc-gq9">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7M-7y-3AF">
+                                                <rect key="frame" x="141.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchPointOfInterest:" destination="BYZ-38-t0r" eventType="valueChanged" id="vaN-ke-kjF"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190.5" id="gxH-mp-PTJ"/>
+                                    <constraint firstAttribute="height" constant="103" id="nnp-6k-GtR"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O2Z-Zf-ANV">
+                                <rect key="frame" x="49.5" y="629" width="276" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="Ohs-B5-mup"/>
+                                    <constraint firstAttribute="height" constant="28" id="vyO-Ta-XfM"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Hybrid"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="V7M-k4-ta9"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-T9-KT7">
+                                <rect key="frame" x="16" y="515" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sde-MD-22r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O2Z-Zf-ANV" secondAttribute="bottom" constant="10" id="BAb-fk-JE0"/>
+                            <constraint firstItem="7pW-4K-VhW" firstAttribute="top" secondItem="dcV-bb-b9Z" secondAttribute="bottom" constant="8" id="BSJ-mz-h78"/>
+                            <constraint firstItem="O2Z-Zf-ANV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Im8-ur-u2V"/>
+                            <constraint firstItem="dcV-bb-b9Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KZW-dA-d1o"/>
+                            <constraint firstItem="7pW-4K-VhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kkw-xs-9TM"/>
+                            <constraint firstItem="O2Z-Zf-ANV" firstAttribute="top" secondItem="7pW-4K-VhW" secondAttribute="bottom" constant="10.5" id="WV0-qj-yQR"/>
+                            <constraint firstItem="dcV-bb-b9Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YVU-gA-PXT"/>
+                            <constraint firstAttribute="trailing" secondItem="dcV-bb-b9Z" secondAttribute="trailing" id="gPC-mL-xKq"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="dcV-bb-b9Z" id="uUq-s8-zUG"/>
+                        <outlet property="segmentControl" destination="O2Z-Zf-ANV" id="wot-Eh-uL6"/>
+                        <outlet property="switchMyLocation" destination="dag-Cd-i5A" id="3cY-iH-pR5"/>
+                        <outlet property="switchPointOfInterest" destination="x7M-7y-3AF" id="7Pm-KZ-Mja"/>
+                        <outlet property="switchTraffic" destination="OEd-vs-OTV" id="kMO-Eb-NZZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="RQf-s6-ckq" customClass="MapViewDelegate" customModule="MapView01" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F10199BC1EEB302300E65465 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10199BB1EEB302300E65465 /* Utilities.swift */; };
+		F1110E211EE4A02A00B6002B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110E201EE4A02A00B6002B /* AppDelegate.swift */; };
+		F1110E261EE4A02A00B6002B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1110E241EE4A02A00B6002B /* Main.storyboard */; };
+		F1110E291EE4A02A00B6002B /* Ferries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1110E271EE4A02A00B6002B /* Ferries.xcdatamodeld */; };
+		F1110E2B1EE4A02A00B6002B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1110E2A1EE4A02A00B6002B /* Assets.xcassets */; };
+		F1110E2E1EE4A02A00B6002B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1110E2C1EE4A02A00B6002B /* LaunchScreen.storyboard */; };
+		F1110E361EE4A0D300B6002B /* VCFerries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110E351EE4A0D300B6002B /* VCFerries.swift */; };
+		F1110E3A1EE4A2AE00B6002B /* TVCFerry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110E391EE4A2AE00B6002B /* TVCFerry.swift */; };
+		F1110E3C1EE4A4A700B6002B /* Vessel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110E3B1EE4A4A700B6002B /* Vessel.swift */; };
+		F1110E3E1EE4A59600B6002B /* VesselClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110E3D1EE4A59600B6002B /* VesselClass.swift */; };
+		F1110E401EE4A72D00B6002B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110E3F1EE4A72D00B6002B /* CoreDataStack.swift */; };
+		F113C4E91EE788D9007FD7C1 /* VesselDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113C4E81EE788D9007FD7C1 /* VesselDetails.swift */; };
+		F113C4EB1EE78E08007FD7C1 /* APIVesselDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113C4EA1EE78E08007FD7C1 /* APIVesselDetails.swift */; };
+		F11578D71EE61240005CC23E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11578D61EE61240005CC23E /* JSONParser.swift */; };
+		F11578DD1EE62138005CC23E /* APIVessel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11578DC1EE62138005CC23E /* APIVessel.swift */; };
+		F18329C71EE7B51E00114D55 /* VesselPositionReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329C61EE7B51E00114D55 /* VesselPositionReport.swift */; };
+		F18329C91EE7B5EC00114D55 /* APIVesselPositionReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329C81EE7B5EC00114D55 /* APIVesselPositionReport.swift */; };
+		F18329CB1EE7B86A00114D55 /* VCFerry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329CA1EE7B86A00114D55 /* VCFerry.swift */; };
+		F18329D01EE864B300114D55 /* VCDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329CF1EE864B300114D55 /* VCDebug.swift */; };
+		F18329D61EE894DD00114D55 /* TVCPositionReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329D51EE894DD00114D55 /* TVCPositionReport.swift */; };
+		F18329D81EE8961600114D55 /* VCPositionReports.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329D71EE8961600114D55 /* VCPositionReports.swift */; };
+		F18329DA1EE8ACC300114D55 /* VCMapDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329D91EE8ACC300114D55 /* VCMapDebug.swift */; };
+		F18329DF1EE8AE8D00114D55 /* MapVesselAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329DE1EE8AE8D00114D55 /* MapVesselAnnotation.swift */; };
+		F18329E11EE8D42900114D55 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18329E01EE8D42900114D55 /* UserPreferences.swift */; };
+		F1B00F261EE6FF15002077DF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B00F251EE6FF15002077DF /* CoreDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F10199BB1EEB302300E65465 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F1110E1D1EE4A02A00B6002B /* Ferries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ferries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1110E201EE4A02A00B6002B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1110E251EE4A02A00B6002B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1110E281EE4A02A00B6002B /* Ferries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ferries.xcdatamodel; sourceTree = "<group>"; };
+		F1110E2A1EE4A02A00B6002B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1110E2D1EE4A02A00B6002B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1110E2F1EE4A02A00B6002B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1110E351EE4A0D300B6002B /* VCFerries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCFerries.swift; path = Ferries/VCFerries.swift; sourceTree = "<group>"; };
+		F1110E391EE4A2AE00B6002B /* TVCFerry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TVCFerry.swift; path = Ferries/TVCFerry.swift; sourceTree = "<group>"; };
+		F1110E3B1EE4A4A700B6002B /* Vessel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vessel.swift; path = Ferries/Vessel.swift; sourceTree = "<group>"; };
+		F1110E3D1EE4A59600B6002B /* VesselClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VesselClass.swift; path = Ferries/VesselClass.swift; sourceTree = "<group>"; };
+		F1110E3F1EE4A72D00B6002B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Ferries/CoreDataStack.swift; sourceTree = "<group>"; };
+		F113C4E81EE788D9007FD7C1 /* VesselDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VesselDetails.swift; sourceTree = "<group>"; };
+		F113C4EA1EE78E08007FD7C1 /* APIVesselDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVesselDetails.swift; sourceTree = "<group>"; };
+		F11578D61EE61240005CC23E /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = Ferries/JSONParser.swift; sourceTree = "<group>"; };
+		F11578DC1EE62138005CC23E /* APIVessel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVessel.swift; sourceTree = "<group>"; };
+		F18329C61EE7B51E00114D55 /* VesselPositionReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VesselPositionReport.swift; sourceTree = "<group>"; };
+		F18329C81EE7B5EC00114D55 /* APIVesselPositionReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIVesselPositionReport.swift; sourceTree = "<group>"; };
+		F18329CA1EE7B86A00114D55 /* VCFerry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCFerry.swift; path = Ferries/VCFerry.swift; sourceTree = "<group>"; };
+		F18329CF1EE864B300114D55 /* VCDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCDebug.swift; sourceTree = "<group>"; };
+		F18329D51EE894DD00114D55 /* TVCPositionReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCPositionReport.swift; sourceTree = "<group>"; };
+		F18329D71EE8961600114D55 /* VCPositionReports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCPositionReports.swift; sourceTree = "<group>"; };
+		F18329D91EE8ACC300114D55 /* VCMapDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapDebug.swift; sourceTree = "<group>"; };
+		F18329DE1EE8AE8D00114D55 /* MapVesselAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVesselAnnotation.swift; sourceTree = "<group>"; };
+		F18329E01EE8D42900114D55 /* UserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		F1B00F251EE6FF15002077DF /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1110E1A1EE4A02A00B6002B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1110E141EE4A02A00B6002B = {
+			isa = PBXGroup;
+			children = (
+				F1110E1F1EE4A02A00B6002B /* Application Objects */,
+				F11578D91EE620F6005CC23E /* API Data Objects */,
+				F11578D81EE620CF005CC23E /* Core Data */,
+				F18329CE1EE8648900114D55 /* VCDebug */,
+				F18329CD1EE8638900114D55 /* VCFerries */,
+				F18329CC1EE859F400114D55 /* VCFerry */,
+				F1110E1E1EE4A02A00B6002B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1110E1E1EE4A02A00B6002B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1110E1D1EE4A02A00B6002B /* Ferries.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1110E1F1EE4A02A00B6002B /* Application Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F1110E201EE4A02A00B6002B /* AppDelegate.swift */,
+				F1110E2A1EE4A02A00B6002B /* Assets.xcassets */,
+				F1110E2F1EE4A02A00B6002B /* Info.plist */,
+				F1110E2C1EE4A02A00B6002B /* LaunchScreen.storyboard */,
+				F1110E241EE4A02A00B6002B /* Main.storyboard */,
+				F18329DE1EE8AE8D00114D55 /* MapVesselAnnotation.swift */,
+				F18329E01EE8D42900114D55 /* UserPreferences.swift */,
+				F10199BB1EEB302300E65465 /* Utilities.swift */,
+			);
+			name = "Application Objects";
+			path = Ferries;
+			sourceTree = "<group>";
+		};
+		F11578D81EE620CF005CC23E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F1110E271EE4A02A00B6002B /* Ferries.xcdatamodeld */,
+				F1B00F251EE6FF15002077DF /* CoreDataManager.swift */,
+				F1110E3F1EE4A72D00B6002B /* CoreDataStack.swift */,
+				F1110E3B1EE4A4A700B6002B /* Vessel.swift */,
+				F1110E3D1EE4A59600B6002B /* VesselClass.swift */,
+				F113C4E81EE788D9007FD7C1 /* VesselDetails.swift */,
+				F18329C61EE7B51E00114D55 /* VesselPositionReport.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		F11578D91EE620F6005CC23E /* API Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F11578DC1EE62138005CC23E /* APIVessel.swift */,
+				F113C4EA1EE78E08007FD7C1 /* APIVesselDetails.swift */,
+				F18329C81EE7B5EC00114D55 /* APIVesselPositionReport.swift */,
+				F11578D61EE61240005CC23E /* JSONParser.swift */,
+			);
+			name = "API Data Objects";
+			sourceTree = "<group>";
+		};
+		F18329CC1EE859F400114D55 /* VCFerry */ = {
+			isa = PBXGroup;
+			children = (
+				F1110E391EE4A2AE00B6002B /* TVCFerry.swift */,
+				F18329CA1EE7B86A00114D55 /* VCFerry.swift */,
+			);
+			name = VCFerry;
+			sourceTree = "<group>";
+		};
+		F18329CD1EE8638900114D55 /* VCFerries */ = {
+			isa = PBXGroup;
+			children = (
+				F1110E351EE4A0D300B6002B /* VCFerries.swift */,
+			);
+			name = VCFerries;
+			sourceTree = "<group>";
+		};
+		F18329CE1EE8648900114D55 /* VCDebug */ = {
+			isa = PBXGroup;
+			children = (
+				F18329D51EE894DD00114D55 /* TVCPositionReport.swift */,
+				F18329CF1EE864B300114D55 /* VCDebug.swift */,
+				F18329D91EE8ACC300114D55 /* VCMapDebug.swift */,
+				F18329D71EE8961600114D55 /* VCPositionReports.swift */,
+			);
+			name = VCDebug;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1110E1C1EE4A02A00B6002B /* Ferries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1110E321EE4A02A00B6002B /* Build configuration list for PBXNativeTarget "Ferries" */;
+			buildPhases = (
+				F1110E191EE4A02A00B6002B /* Sources */,
+				F1110E1A1EE4A02A00B6002B /* Frameworks */,
+				F1110E1B1EE4A02A00B6002B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ferries;
+			productName = Ferries;
+			productReference = F1110E1D1EE4A02A00B6002B /* Ferries.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1110E151EE4A02A00B6002B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Perkins Coie";
+				TargetAttributes = {
+					F1110E1C1EE4A02A00B6002B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F1110E181EE4A02A00B6002B /* Build configuration list for PBXProject "Ferries" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1110E141EE4A02A00B6002B;
+			productRefGroup = F1110E1E1EE4A02A00B6002B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1110E1C1EE4A02A00B6002B /* Ferries */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1110E1B1EE4A02A00B6002B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1110E2E1EE4A02A00B6002B /* LaunchScreen.storyboard in Resources */,
+				F1110E2B1EE4A02A00B6002B /* Assets.xcassets in Resources */,
+				F1110E261EE4A02A00B6002B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1110E191EE4A02A00B6002B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18329D61EE894DD00114D55 /* TVCPositionReport.swift in Sources */,
+				F18329E11EE8D42900114D55 /* UserPreferences.swift in Sources */,
+				F1110E401EE4A72D00B6002B /* CoreDataStack.swift in Sources */,
+				F18329D81EE8961600114D55 /* VCPositionReports.swift in Sources */,
+				F1110E291EE4A02A00B6002B /* Ferries.xcdatamodeld in Sources */,
+				F11578D71EE61240005CC23E /* JSONParser.swift in Sources */,
+				F113C4EB1EE78E08007FD7C1 /* APIVesselDetails.swift in Sources */,
+				F18329C91EE7B5EC00114D55 /* APIVesselPositionReport.swift in Sources */,
+				F1110E211EE4A02A00B6002B /* AppDelegate.swift in Sources */,
+				F18329C71EE7B51E00114D55 /* VesselPositionReport.swift in Sources */,
+				F1110E3A1EE4A2AE00B6002B /* TVCFerry.swift in Sources */,
+				F10199BC1EEB302300E65465 /* Utilities.swift in Sources */,
+				F18329CB1EE7B86A00114D55 /* VCFerry.swift in Sources */,
+				F1B00F261EE6FF15002077DF /* CoreDataManager.swift in Sources */,
+				F1110E361EE4A0D300B6002B /* VCFerries.swift in Sources */,
+				F113C4E91EE788D9007FD7C1 /* VesselDetails.swift in Sources */,
+				F1110E3E1EE4A59600B6002B /* VesselClass.swift in Sources */,
+				F18329D01EE864B300114D55 /* VCDebug.swift in Sources */,
+				F18329DA1EE8ACC300114D55 /* VCMapDebug.swift in Sources */,
+				F11578DD1EE62138005CC23E /* APIVessel.swift in Sources */,
+				F1110E3C1EE4A4A700B6002B /* Vessel.swift in Sources */,
+				F18329DF1EE8AE8D00114D55 /* MapVesselAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1110E241EE4A02A00B6002B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1110E251EE4A02A00B6002B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1110E2C1EE4A02A00B6002B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1110E2D1EE4A02A00B6002B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1110E301EE4A02A00B6002B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1110E311EE4A02A00B6002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1110E331EE4A02A00B6002B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Ferries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PerkinsCoie.Ferries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1110E341EE4A02A00B6002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Ferries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PerkinsCoie.Ferries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1110E181EE4A02A00B6002B /* Build configuration list for PBXProject "Ferries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1110E301EE4A02A00B6002B /* Debug */,
+				F1110E311EE4A02A00B6002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1110E321EE4A02A00B6002B /* Build configuration list for PBXNativeTarget "Ferries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1110E331EE4A02A00B6002B /* Debug */,
+				F1110E341EE4A02A00B6002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1110E271EE4A02A00B6002B /* Ferries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1110E281EE4A02A00B6002B /* Ferries.xcdatamodel */,
+			);
+			currentVersion = F1110E281EE4A02A00B6002B /* Ferries.xcdatamodel */;
+			name = Ferries.xcdatamodeld;
+			path = Ferries/Ferries.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1110E151EE4A02A00B6002B /* Project object */;
+}

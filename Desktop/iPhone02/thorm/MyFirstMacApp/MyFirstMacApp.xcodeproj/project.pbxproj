@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1110DF61EDFBE5D00B6002B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110DF51EDFBE5D00B6002B /* AppDelegate.swift */; };
+		F1110DF81EDFBE5D00B6002B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1110DF71EDFBE5D00B6002B /* ViewController.swift */; };
+		F1110DFB1EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1110DF91EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodeld */; };
+		F1110DFD1EDFBE5D00B6002B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1110DFC1EDFBE5D00B6002B /* Assets.xcassets */; };
+		F1110E001EDFBE5E00B6002B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1110DFE1EDFBE5E00B6002B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1110DF21EDFBE5D00B6002B /* MyFirstMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1110DF51EDFBE5D00B6002B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1110DF71EDFBE5D00B6002B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1110DFA1EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFirstMacApp.xcdatamodel; sourceTree = "<group>"; };
+		F1110DFC1EDFBE5D00B6002B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1110DFF1EDFBE5E00B6002B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1110E011EDFBE5E00B6002B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1110E0A1EDFBE7800B6002B /* MyFirstMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFirstMacApp.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1110DEF1EDFBE5D00B6002B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1110DE91EDFBE5D00B6002B = {
+			isa = PBXGroup;
+			children = (
+				F1110DF41EDFBE5D00B6002B /* MyFirstMacApp */,
+				F1110DF31EDFBE5D00B6002B /* Products */,
+				F1110E071EDFBE7800B6002B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1110DF31EDFBE5D00B6002B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1110DF21EDFBE5D00B6002B /* MyFirstMacApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1110DF41EDFBE5D00B6002B /* MyFirstMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				F1110E0A1EDFBE7800B6002B /* MyFirstMacApp.entitlements */,
+				F1110DF51EDFBE5D00B6002B /* AppDelegate.swift */,
+				F1110DF71EDFBE5D00B6002B /* ViewController.swift */,
+				F1110DFC1EDFBE5D00B6002B /* Assets.xcassets */,
+				F1110DFE1EDFBE5E00B6002B /* Main.storyboard */,
+				F1110E011EDFBE5E00B6002B /* Info.plist */,
+				F1110DF91EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodeld */,
+			);
+			path = MyFirstMacApp;
+			sourceTree = "<group>";
+		};
+		F1110E071EDFBE7800B6002B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1110DF11EDFBE5D00B6002B /* MyFirstMacApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1110E041EDFBE5E00B6002B /* Build configuration list for PBXNativeTarget "MyFirstMacApp" */;
+			buildPhases = (
+				F1110DEE1EDFBE5D00B6002B /* Sources */,
+				F1110DEF1EDFBE5D00B6002B /* Frameworks */,
+				F1110DF01EDFBE5D00B6002B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFirstMacApp;
+			productName = MyFirstMacApp;
+			productReference = F1110DF21EDFBE5D00B6002B /* MyFirstMacApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1110DEA1EDFBE5D00B6002B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Perkins Coie";
+				TargetAttributes = {
+					F1110DF11EDFBE5D00B6002B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = UTVYG2S2RN;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F1110DED1EDFBE5D00B6002B /* Build configuration list for PBXProject "MyFirstMacApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1110DE91EDFBE5D00B6002B;
+			productRefGroup = F1110DF31EDFBE5D00B6002B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1110DF11EDFBE5D00B6002B /* MyFirstMacApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1110DF01EDFBE5D00B6002B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1110DFD1EDFBE5D00B6002B /* Assets.xcassets in Resources */,
+				F1110E001EDFBE5E00B6002B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1110DEE1EDFBE5D00B6002B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1110DF81EDFBE5D00B6002B /* ViewController.swift in Sources */,
+				F1110DFB1EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodeld in Sources */,
+				F1110DF61EDFBE5D00B6002B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1110DFE1EDFBE5E00B6002B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1110DFF1EDFBE5E00B6002B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1110E021EDFBE5E00B6002B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1110E031EDFBE5E00B6002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F1110E051EDFBE5E00B6002B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UTVYG2S2RN;
+				INFOPLIST_FILE = MyFirstMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PerkinsCoie.MyFirstMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1110E061EDFBE5E00B6002B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UTVYG2S2RN;
+				INFOPLIST_FILE = MyFirstMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PerkinsCoie.MyFirstMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1110DED1EDFBE5D00B6002B /* Build configuration list for PBXProject "MyFirstMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1110E021EDFBE5E00B6002B /* Debug */,
+				F1110E031EDFBE5E00B6002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1110E041EDFBE5E00B6002B /* Build configuration list for PBXNativeTarget "MyFirstMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1110E051EDFBE5E00B6002B /* Debug */,
+				F1110E061EDFBE5E00B6002B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1110DF91EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1110DFA1EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodel */,
+			);
+			currentVersion = F1110DFA1EDFBE5D00B6002B /* MyFirstMacApp.xcdatamodel */;
+			path = MyFirstMacApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1110DEA1EDFBE5D00B6002B /* Project object */;
+}
