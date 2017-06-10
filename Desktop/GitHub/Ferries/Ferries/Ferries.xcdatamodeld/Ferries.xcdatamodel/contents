@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="Ferries">
+    <entity name="Vessel" representedClassName=".Vessel" syncable="YES">
+        <attribute name="abbrevName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastPositionUpdateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vesselID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toVesselClass" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VesselClass" inverseName="toVessel" inverseEntity="VesselClass" syncable="YES"/>
+        <relationship name="toVesselDetails" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VesselDetails" inverseName="toVessel" inverseEntity="VesselDetails" syncable="YES"/>
+        <relationship name="toVesselPositionReport" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VesselPositionReport" inverseName="toVessel" inverseEntity="VesselPositionReport" syncable="YES"/>
+    </entity>
+    <entity name="VesselClass" representedClassName=".VesselClass" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toVessel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vessel" inverseName="toVesselClass" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="VesselDetails" representedClassName=".VesselDetails" syncable="YES">
+        <attribute name="drawingURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vesselID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toVessel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vessel" inverseName="toVesselDetails" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="VesselPositionReport" representedClassName=".VesselPositionReport" syncable="YES">
+        <attribute name="heading" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vesselID" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toVessel" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Vessel" inverseName="toVesselPositionReport" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Vessel" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="VesselClass" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="VesselDetails" positionX="-54" positionY="27" width="128" height="135"/>
+        <element name="VesselPositionReport" positionX="-54" positionY="54" width="128" height="148"/>
+    </elements>
+</model>
